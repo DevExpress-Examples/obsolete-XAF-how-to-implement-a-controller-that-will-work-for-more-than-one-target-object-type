@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BO.cs](./CS/WinWebSolution.Module/BO.cs) (VB: [BO.vb](./VB/WinWebSolution.Module/BO.vb))
+* [DemoViewController.cs](./CS/WinWebSolution.Module/DemoViewController.cs) (VB: [DemoViewController.vb](./VB/WinWebSolution.Module/DemoViewController.vb))
+<!-- default file list end -->
 # OBSOLETE - How to implement a controller that will work for more than one target object type (Example)
 
 
