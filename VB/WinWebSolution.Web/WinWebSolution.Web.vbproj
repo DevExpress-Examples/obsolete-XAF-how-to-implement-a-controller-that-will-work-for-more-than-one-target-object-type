@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
@@ -8,101 +10,144 @@
     <ProjectGuid>{1CA35D8F-9633-468F-861C-10C93AE7DFA5}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>WinWebSolution.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>42353,42354,42355</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>42353,42354,42355</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\</OutputPath>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <DefineConstants>EASYTEST=True</DefineConstants>
+    <DefineConstants>TRACE,DEBUG,EASYTEST</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
+    <NoWarn>42353,42354,42355</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Printing.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Printing.v13.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Data.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Images.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.ExpressApp.Images.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Objects.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.ExpressApp.Objects.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Security.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.ExpressApp.Security.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.ExpressApp.Xpo.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.ExpressApp.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Validation.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.ExpressApp.Validation.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Web.v13.1">
+      <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.ExpressApp.Web.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.Base.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Persistent.Base.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Persistent.BaseImpl.v13.1">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxEditors.v13.1">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxGridView.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Persistent.BaseImpl.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Web.ASPxHtmlEditor.v13.1">
+      <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Web.ASPxHtmlEditor.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Web.ASPxSpellChecker.v13.1">
+      <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Web.ASPxSpellChecker.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Web.ASPxThemes.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Web.ASPxThemes.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Office.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Office.v13.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Docs.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Docs.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.RichEdit.v13.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Web.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Web.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Xpo.v13.1.Web">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Xpo.v13.1.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DXDlls\13.1.14\DevExpress.Xpo.v13.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System">
@@ -190,7 +235,7 @@
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ApplicationCode\WebApplication.resx">
@@ -204,17 +249,24 @@
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WinWebSolution.Module\WinWebSolution.Module.vbproj">
       <Project>{CE3631FD-FBB4-403F-B760-A02BFD1DFB64}</Project>
       <Name>WinWebSolution.Module</Name>
     </ProjectReference>
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
@@ -229,7 +281,8 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59951</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
         </WebProjectProperties>
       </FlavorProperties>
